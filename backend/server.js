@@ -18,8 +18,8 @@ const io = new Server(server, {
 
 const PORT = process.env.PORT || 5000;
 const MONGODB_URI = process.env.MONGODB_URI;
-console.log(MONGODB_URI);
-console.log(PORT)
+// console.log(MONGODB_URI);
+// console.log(PORT)
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
