@@ -13,7 +13,7 @@ const server = http.createServer(app);
 app.use(cors())
 const io = new Server(server, {
   cors: {
-    origin: [process.env.FRONTEND_URL, "https://google-docs-clone-frontend-js4w.vercel.app/"],
+    origin: [process.env.FRONTEND_URL],
     methods: ['GET', 'POST'],
   },
 });
